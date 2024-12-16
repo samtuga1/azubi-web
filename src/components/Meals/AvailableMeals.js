@@ -38,7 +38,9 @@ const AvailableMeals = () => {
   const fetchMeals = useCallback(async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://localhost:3001/api/v1/products");
+      const response = await fetch(
+        "https://azubi-backend.onrender.com/api/v1/products"
+      );
 
       if (!response.ok) {
         throw new Error("Unable to fetch");

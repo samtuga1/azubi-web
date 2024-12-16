@@ -25,7 +25,7 @@ const Cart = (props) => {
 
   const onSubmitHandler = async (userData) => {
     setOrdering(true);
-    await fetch("http://localhost:3001/api/v1/cart", {
+    await fetch("https://azubi-backend.onrender.com/api/v1/cart", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
